@@ -567,7 +567,7 @@ func NewInstance(b []byte) (*GoInstance, error) {
 
 	data := &GoInstance{}
 	importObject := wasmer.NewImportObject()
-	importObject.Register("go", goRuntime(store, data))
+	importObject.Register("gojs", goRuntime(store, data))
 
 	instance, err := wasmer.NewInstance(module, importObject)
 	if err != nil {
