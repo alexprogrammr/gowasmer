@@ -1,4 +1,4 @@
-module github.com/mattn/gowasmer
+module github.com/alexprogrammr/gowasmer
 
 go 1.16
 
